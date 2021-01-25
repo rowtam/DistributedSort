@@ -1,0 +1,356 @@
+
+Testing the Merging of Arrays with hybridized sorting.
+
+Sort_Viewer_Client: Viewer Not Detected.
+Continuing with text-only representation.
+Super Merge Start
+Quick Sort Start
+Array of Size: 20
+Quick Sort Stop
+Quick Sort Time
+Total time for operation: 262249
+Merge Sort Start
+Merge Sort Stop
+Merge Sort Time
+Total time for operation: 234792
+Selection Sort Start
+Selection Sort Stop
+Selection Sort Time
+Total time for operation: 9614
+Super Merge Stop
+Super Merge Time
+Total time for operation: 1466883
+MERGE_SORT
+SORTED
+44
+0
+0
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+10
+10
+11
+11
+12
+12
+13
+13
+14
+14
+15
+15
+16
+16
+17
+17
+18
+18
+19
+19
+20
+21
+22
+23
+
+Finished Testing Super_Merge
+
+Creating output filestream.
+
+
+Printing Sort_Info sr1 to filestream.
+
+
+Deleting  output filestream.
+
+
+Creating input filestream.
+
+
+Reading filestream into Sort_Info sr2.
+
+
+Deleting input filestream.
+
+
+Testing Print
+
+
+----------------------
+
+
+Printing S1
+
+QUICK_SORT
+UNSORTED
+30
+32225
+17543
+25089
+21183
+25137
+25566
+26966
+4978
+20495
+10311
+11367
+30054
+17031
+13145
+19882
+25736
+30524
+28505
+28394
+22102
+24851
+19067
+12754
+11653
+6561
+27096
+13628
+15188
+32085
+4143
+
+Printing S2
+
+QUICK_SORT
+UNSORTED
+30
+32225
+17543
+25089
+21183
+25137
+25566
+26966
+4978
+20495
+10311
+11367
+30054
+17031
+13145
+19882
+25736
+30524
+28505
+28394
+22102
+24851
+19067
+12754
+11653
+6561
+27096
+13628
+15188
+32085
+4143
+
+----------------------
+
+Sort_Viewer_Client: Viewer Not Detected.
+Continuing with text-only representation.
+Quick Sort Start
+Array of Size: 30
+Quick Sort Stop
+Quick Sort Time
+Total time for operation: 252640
+QUICK_SORT
+SORTED
+30
+4143
+4978
+6561
+10311
+11367
+11653
+12754
+13145
+13628
+15188
+17031
+17543
+19067
+19882
+20495
+21183
+22102
+24851
+25089
+25137
+25566
+25736
+26966
+27096
+28394
+28505
+30054
+30524
+32085
+32225
+Hello
+Hello
+ did we get here? 
+QUICK_SORT
+UNSORTED
+15
+Tue Nov 16 07:58:11 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+        * netsvcs/lib/Client_Logging_Handler.cpp (fini):
+          Make sure to dynamically allocate the logger_key_ and
+          server_host_ so that we don't end up with weird memory problems.
+          Thanks to Dmitry Ergy <dergy@websci.ru> for reporting this.
+        * ace/config-irix6.x-common.h: Added
+          ACE_LACKS_PLACEMENT_OPERATOR_DELETE to keep Irix compilers from
+          complaining!  Thanks to David for reporting this.
+Mon Nov 15 20:44:04 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+        * ace/OS.cpp (inherit_log_msg): Added a comment explaining why
+          we don't inherit the callback when a new thread is created -
+          since all hell would break loose otherwise if it came off the
+          stack!  Thanks to Sangwoo Jin <swjinjin@sei.co.kr> for
+          motivating this clarification.
+
+Quick Sort Start
+Array of Size: 15
+Quick Sort Stop
+Quick Sort Time
+Total time for operation: 382835
+QUICK_SORT
+SORTED
+15
+
+          ACE_LACKS_PLACEMENT_OPERATOR_DELETE to keep Irix compilers from
+          Make sure to dynamically allocate the logger_key_ and
+          Thanks to Dmitry Ergy <dergy@websci.ru> for reporting this.
+          complaining!  Thanks to David for reporting this.
+          motivating this clarification.
+          server_host_ so that we don't end up with weird memory problems.
+          since all hell would break loose otherwise if it came off the
+          stack!  Thanks to Sangwoo Jin <swjinjin@sei.co.kr> for
+          we don't inherit the callback when a new thread is created -
+        * ace/OS.cpp (inherit_log_msg): Added a comment explaining why
+        * ace/config-irix6.x-common.h: Added
+        * netsvcs/lib/Client_Logging_Handler.cpp (fini):
+Mon Nov 15 20:44:04 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+Tue Nov 16 07:58:11 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+
+Printing stream returned from server:
+
+QUICK_SORT
+SORTED
+15
+
+          ACE_LACKS_PLACEMENT_OPERATOR_DELETE to keep Irix compilers from
+          Make sure to dynamically allocate the logger_key_ and
+          Thanks to Dmitry Ergy <dergy@websci.ru> for reporting this.
+          complaining!  Thanks to David for reporting this.
+          motivating this clarification.
+          server_host_ so that we don't end up with weird memory problems.
+          since all hell would break loose otherwise if it came off the
+          stack!  Thanks to Sangwoo Jin <swjinjin@sei.co.kr> for
+          we don't inherit the callback when a new thread is created -
+        * ace/OS.cpp (inherit_log_msg): Added a comment explaining why
+        * ace/config-irix6.x-common.h: Added
+        * netsvcs/lib/Client_Logging_Handler.cpp (fini):
+Mon Nov 15 20:44:04 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+Tue Nov 16 07:58:11 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+
+Reading IP address from Distributed_Sort.cfg
+
+128.252.21.31
+128.252.21.33
+128.252.21.41
+128.252.21.43
+128.252.21.51
+128.252.21.52
+
+Number of machines in use: 6
+Partition Size : 2
+Partition of size : 2
+Connector to 128.252.21.31 created. 0
+Partition of size : 2
+Connector to 128.252.21.33 created. 1
+Partition of size : 2
+Connector to 128.252.21.41 created. 2
+Partition of size : 2
+Connector to 128.252.21.43 created. 3
+Partition of size : 2
+Connector to 128.252.21.51 created. 4
+Partition of size : 5
+Connector to 128.252.21.52 created. 5
+Distributed Sort Start
+Super Merge Start
+Super Merge Stop
+Super Merge Time
+Total time for operation: 1704008
+Distributed Sort Stop
+Distributed Sort Time
+Total time for operation: 75211475
+QUICK_SORT
+SORTED
+15
+
+          ACE_LACKS_PLACEMENT_OPERATOR_DELETE to keep Irix compilers from
+          Make sure to dynamically allocate the logger_key_ and
+          Thanks to Dmitry Ergy <dergy@websci.ru> for reporting this.
+          complaining!  Thanks to David for reporting this.
+          motivating this clarification.
+          server_host_ so that we don't end up with weird memory problems.
+          since all hell would break loose otherwise if it came off the
+          stack!  Thanks to Sangwoo Jin <swjinjin@sei.co.kr> for
+          we don't inherit the callback when a new thread is created -
+        * ace/OS.cpp (inherit_log_msg): Added a comment explaining why
+        * ace/config-irix6.x-common.h: Added
+        * netsvcs/lib/Client_Logging_Handler.cpp (fini):
+Mon Nov 15 20:44:04 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+Tue Nov 16 07:58:11 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+Here's the time again:
+Total time for operation: 75211475
+Quick Sort Start
+Array of Size: 15
+Quick Sort Stop
+Quick Sort Time
+Total time for operation: 392214
+QUICK_SORT
+SORTED
+15
+
+          ACE_LACKS_PLACEMENT_OPERATOR_DELETE to keep Irix compilers from
+          Make sure to dynamically allocate the logger_key_ and
+          Thanks to Dmitry Ergy <dergy@websci.ru> for reporting this.
+          complaining!  Thanks to David for reporting this.
+          motivating this clarification.
+          server_host_ so that we don't end up with weird memory problems.
+          since all hell would break loose otherwise if it came off the
+          stack!  Thanks to Sangwoo Jin <swjinjin@sei.co.kr> for
+          we don't inherit the callback when a new thread is created -
+        * ace/OS.cpp (inherit_log_msg): Added a comment explaining why
+        * ace/config-irix6.x-common.h: Added
+        * netsvcs/lib/Client_Logging_Handler.cpp (fini):
+Mon Nov 15 20:44:04 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+Tue Nov 16 07:58:11 1999  Douglas C. Schmidt  <schmidt@tango.cs.wustl.edu>
+
+================ HISTORY REPORT =================
+  "Sort_Info_Base" total constructed = 48
+  "Sort_Info_Base" peak in use       = 27
+  "Sort_Info_Base" now in use        = 0
+=================================================

@@ -1,0 +1,100 @@
+Ronnie Tam
+4/27/2000
+Lab 7
+
+Introduction
+============
+In this lab, we are to
+
+1) Measure the performance of your sorter, using the best sort algorithm
+you have.  Make a Timer class to do this.
+
+2) Implement distributed sort.
+
+I demoed the lab with Christine West and Steve Donahue in lab and it
+worked just fine (so I'm guaranteed a 90, yippeee!). 
+
+Evaluation criteria
+===================
+I implemented a timer class.
+
+In this lab, I will implement a "server" and a client.
+The servers or "acceptors" will run on multiple machines.
+the client will partition data and send the partitioned
+data to multiple machines, effectively "distributing" the
+workload of the sort.
+
+Test results
+============
+Note:
+You must enable run-time-type-identification in your compiler for this 
+lab to work.
+
+1) Implemented a Timer class.
+
+  Well, this wasn't that hard.  It's pretty basic and it works well.
+
+2) Implemented a String class.
+
+  Pretty much just holds a char *.  Not much to say here.
+
+3) Implemented a Connector class, to handle connections to server
+
+   Connector class handles connections to the server.  Not much to say
+   here either.
+
+4) Implemented an acceptor function inside main.cc
+
+   Type "main" for the syntax.
+
+   "main acceptor" starts an acceptor
+
+   "main client filename" creates a client and runs a sort on the filename
+    you pass in.
+
+5) Added a constructor to Sort_Info to take in a char * filename.
+
+6) Added Distributed Sort.   
+
+   Distributed Sort reads a list of IP addresses from distributed_sort.cfg
+   and evenly (almost evenly anyways)  partitions the data among all
+   the IP addresses.  The last partition is always a tad larger or smaller
+   than the rest because sometimes the  # of elements doesn't divide
+   evenly with the number of machines.
+
+   None of it is hard coded, not even the filename, so that makes things
+   quite flexible.
+
+   In the main driver, I did hard code a few test files, but the
+   main distributed sort runs on whatever filename you pass in on 
+   the command line.
+
+   The parallellism is achieved two loops.  One loop calls
+   send_to_server() on all the connector objects.  The other loop
+   polls for results.
+
+Here's some statistics:
+
+it took 90 seconds total for distributed_sort across six machines and 
+13 minutes for local quick_sort.  
+
+The six servers were:
+
+sukhoi : 25 seconds for a partition of 23316 lines
+boeing : 28 seconds for a partition of 23316 lines
+northrup : 28 seconds for a partition of 23316 lines
+bell : 23 seconds for a partition of 23316 lines
+wright : 60 seconds for a partition of 23316 lines
+fairchild : 25 seconds for a partition of 23318 lines 
+
+The rest of the time was spent merging.
+
+Thus, distributed sort is 10 times faster than local quick sort.
+
+Apparently, my Quick_Sort does not scale very well with increasing
+data size.
+
+Conclusions
+===========
+  In this lab I learned all about sockets, streams, and a lot about
+dealing with character buffers.
